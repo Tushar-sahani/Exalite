@@ -1,0 +1,190 @@
+body {
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+    font-family: "Andada Pro", serif;
+    text-transform: capitalize;
+}
+/* 
+h1 {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+
+.sidebar {
+    background-color: rgb(172, 172, 172);
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 2rem 0rem;
+    width: 15rem;
+    height: 100vh;
+    transition: 0.5s all;
+    overflow: hidden;
+    z-index: 10;
+}
+
+.sidebar .logoContainer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.sidebar .logoContainer .title {
+    font-size: 25px;
+    color: black;
+    padding: 0 0 0 0.5rem;
+    font-weight: bold;
+}
+.logo{
+    width: 50px;
+    /* margin-left: -17px; */
+}
+
+.sidebar .contentsContainer {
+    height: 100vh;
+    background-color: rgb(41, 71, 159);
+    margin: 2rem 0 0 0;
+}
+
+.link{
+    text-decoration: none;
+}
+
+.sidebar .contentsContainer ul {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+    width: 100%;
+    margin: 0;
+}
+
+.sidebar .contentsContainer ul li {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    margin: 0.50rem 0;
+    padding: 0.75rem 30px;
+    width: 133%;
+    cursor: pointer;
+}
+
+.sidebar .contentsContainer ul li i {
+    padding-right: 13px;
+    color: black;
+    font-size: 25px;
+
+}
+
+.sidebar .contentsContainer ul li span {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 0 0 0.5rem;
+    text-decoration: none;
+
+}
+
+.sidebar .contentsContainer ul li.active {
+    background-color: #f4f9f4;
+}
+
+.sidebar .contentsContainer ul li:hover {
+    background-color: #f2f2f2;
+    transition: 0.25s;
+}
+
+.sidebar.active {
+    width: 5rem;
+    transition: 0.5s all;
+}
+
+.sidebar.active .logoContainer .title {
+    opacity: 0;
+}
+
+.sidebar.active .contentsContainer span {
+    display: none;
+    
+}
+
+
+/* Dashboard */
+
+/* .dashboard{
+    width: 100vw;
+    
+    
+} */
+.create-shipment{
+    background: linear-gradient(rgba(67, 91, 227, 0.321), rgba(67, 91, 227, 0.321));
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.see-device{
+    background: linear-gradient(rgba(227, 67, 67, 0.321), rgba(227, 67, 67, 0.321));
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.heading{
+    background-color: rgb(228, 226, 226);
+    width: 100vw;
+}
+
+.row-item{
+    background: url('../../assets/dashboard.png');
+    background-position: bottom;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+}
+.btn1{
+    border: none;
+    padding: 8px;
+    width: 250px;
+}
+.row-heading{
+    position: absolute;
+    top: 28%;
+}
+
+/* My Shipment */
+
+.createshipment{
+    background-color: grey;
+    margin-left: 38px;
+    margin-top: 5px;
+}
+
+.container::after{
+        height: 50vh;
+        width: 100vw;
+        border-radius: 0 0 140px 140px;
+        -moz-border-radius: 0 0 140px 140px;
+        -webkit-border-radius: 0 0 140px 140px;
+        background: #103252;
+}
