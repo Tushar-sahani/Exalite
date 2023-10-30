@@ -17,7 +17,7 @@ const Login = () => {
             <div className={`registercontainer ${slide ? "right-panel-active" : ""}`}>
                 <div className="form-container sign-up-container">
                     <form className='form' action="/">
-                        <h2 className='head'>SCMXPertLite</h2>
+                        <h2 className='head'>ExaLite</h2>
                         <h4>Create Account</h4>
                         <div className='form-items'>
                             <label htmlFor="" className='form-label'>What Should We Call you?*</label>
