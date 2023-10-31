@@ -7,9 +7,12 @@ import MyShipment from "./pages/MyShipment";
 import DeviceData from "./pages/DeviceData";
 import MyAccount from "./pages/MyAccount";
 import Sidebar from "./Sidebar";
+import Login from '../Login/Login';
+
 const Home = () => {
     return (
         <Router>
+            {/* <Login/> here using context */}
             <div className="App">
                 <Sidebar />
                 <Routes>
