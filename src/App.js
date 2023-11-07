@@ -1,8 +1,17 @@
-import './App.css'
-import Home from './components/Dashboard/Home';
+import "./App.css";
+import Home from "./components/Dashboard/Home";
+import { TokenProvider } from "./context/context";
+import React from "react";
+
 function App() {
-  return
-  <Home />
+  return <Home />;
 }
 
-export default App;
+function AppWrapper() {
+  return (
+    <TokenProvider>
+      <App />
+    </TokenProvider>
+  );
+}
+export default AppWrapper;
